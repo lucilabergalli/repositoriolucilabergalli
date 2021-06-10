@@ -47,6 +47,7 @@ li a:hover {
 .seccion1__hero {
   background-image: url("../img/type1.jpg");
   width: 100%;
+  max-width: 100%;
   height: 20rem;
   line-height: 60px;
   overflow:hidden;
@@ -89,18 +90,18 @@ h2 {
   height: 100px;
   padding: 40px;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contenedor__secundario {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   margin: 50px
 }
 
 
 .contenedorHijo {
-  flex: 0 0 200px;
   margin: 10px 10px;
   text-align: center;
 }
@@ -114,18 +115,16 @@ h2 {
 }
 
 .contenedor {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  order: 1;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  gap: 20px;
-  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  margin: 50px;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+  align-content: space-between;
   line-height: 25px;
-  /* margin-bottom: 100px; */
+  text-align: justify;
 }
 
 .contenedor h3 {
@@ -135,34 +134,20 @@ h2 {
   border-bottom: solid;
 }
 
-.contenedorIzquierda {
-  flex-direction: column;
-  order: 1;
-}
-
-.contenedorIzquierda p {
-  margin-bottom: 20px;
-}
-
-p {
-  text-align: justify;
-  font-size: normal;
-}
-
-
 .footer {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  font-size:xx-small;
+  font-size: xx-small;
   background: linear-gradient(to bottom, rgb(197, 227, 236), white);
-  justify-content:center;
+  justify-content: center;
   padding: 20px;
+  justify-self: self-end;
 }
 
 
-  /* COTIZACIÓN */
+/* COTIZACIÓN */
 .formulario div {
   height: 70px;
   margin-bottom: 10px;
@@ -176,6 +161,7 @@ p {
 /* CLIENTES */
 
 h2 {
+  font-family: 'Roboto', sans-serif;
   color:rgba(0, 0, 0, 0.733);
   text-align: center;
   margin-bottom: 3rem;
@@ -213,17 +199,16 @@ h2 {
   font-family: 'Roboto', sans-serif;
   }
 
-.main__servicios h2 {
-  margin-bottom: 0;
-}
-
 .main__servicios h4 {
-  text-align: left;
   font-style: normal;
-  margin: 40px
 }
 
-#grid {
+.row {
+  text-align: center;
+}
+
+
+/* #grid {
   display: grid;
   grid-template-rows:repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -262,7 +247,7 @@ h2 {
 .item5 {
   grid-area: item5;
   align-self: stretch;
-  }
+  } */
 
 /* CONTACTO */
 

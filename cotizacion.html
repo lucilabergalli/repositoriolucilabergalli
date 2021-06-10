@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Presupuesto</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
@@ -25,7 +29,7 @@
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="whatsapp">
         <ul>
           <li> 
             <a href="https://api.whatsapp.com/send?phone=+541153230726" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp" width="30px"></a>
@@ -35,46 +39,49 @@
     </header>
     <main class="main__presupuesto">
       <h2>Solicitar Presupuesto</h2>
-      <form action=""></form>
-      <fieldset class="formulario">
-        <div>
-          <strong>Información Personal</strong>
-          <div>
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" name="Nombre" id="Nombre">
-            <label for="celular">Teléfono</label>
-            <input type="text" name="celular" id="celular">
-            <label for="correo">Correo electrónico</label>
-            <input type="text" name="Correo electrónico" id="Correo Electrónico">
+      <div class="container">
+        <form action="a">
+          <div class="row mt-5">
+            <div class="form-group col-md-4"> 
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" name="Nombre" id="Nombre" class="form-control">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="celular">Teléfono</label>
+              <input type="text" name="celular" id="celular" class="form-control">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="correo">Correo electrónico</label>
+              <input type="text" name="Correo electrónico" id="Correo Electrónico" class="form-control">
+            </div>
           </div>
-        </div>
-        <div>
-          <strong>Servicio Requerido</strong>
-          <div>
-            <label for="traduccion">Traducción</label>
-            <input type="radio" name="Servicio" value="Traducción">
-            <label for="interpretacion">Interpretación</label>
-            <input type="radio" name="Servicio" value=Interpretación>
-            <label for="corrección de textos">Corrección de Textos</label>
-            <input type="radio" name="Servicio" value="Corrección"> 
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Traducción
+            </label>
           </div>
-        </div>
-        <div>
-          <strong>Idioma</strong>
-          <div>
-            <select name="Idioma" id="Idioma">
-              <option value="Español">Español</option>
-              <option value="Inglés">Inglés</option>
-              <option value="Italiano">Italiano</option>
-              <option value="Portugués">Portugués</option>
-            </select>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Interpretación
+            </label>
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Corrección de Textos
+            </label>
+          </div>
+        <div class="row mt-5 justify-content-sm-center mb-5">
+          <button class="btn btn-primary">
+            Enviar
+          </button>
         </div>
-        <input type="submit" name="Solicitar Presupuesto" id="Solicitar Presupuesto">
-        <input type="reset" name="reset" id="reset">
-      </fieldset>
+          </form>
+      </div>
       <footer class="footer">
-        <p> LB Traducciones. Teléfono: 4173-1344 | info@lbtraducciones.com. Creado por GPWEB
+        <p class="footer__p"> LB Traducciones. Teléfono: 4173-1344 | info@lbtraducciones.com. Creado por GPWEB
         </p>
       </footer>
     </main>

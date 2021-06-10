@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LB Traducciones</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
@@ -38,61 +42,41 @@
     <main class="main__servicios">
       <section>
         <h2>Nuestros Servicios</h2>
-        <div id="grid">
-          <div class="item border item1">
+        <div class="container">
+         <div class="row justify-content-center">
+           <div class="col-md-6 col-xs-2">
+            <div>
+              <h4>Traducciones</h4> 
+            </div>
+            <div>
+              <img src="./img/iconotraduccion.png" class="img-fluid" alt="traduccion" width="150vh" height="150vh">
+            </div>
           </div>
-          <div class="item border item2">
-            <h4>Traducciones de carácter público</h4>
-            <ul>
-              <li>Derecho Constitucional</li>
-              <li>Derecho Internacional Público</li>
-              <li>Derecho Penal</li>
-              <li>Derecho Procesal Civil (escritos judiciales, providencias, cédulas y sentencias)</li>
-              <li>Derecho Procesal Penal (escritos judiciales, providencias, cédulas y sentencias)</li>
-            </ul>
+          <div class="col-md-6 col-xs-2">
+            <div>
+              <h4>Corrección y Revisión de Documentos</h4>
+            </div>
+            <div>
+              <img src="./img/iconocorreccion.jpg" class="img-fluid" alt="correccion" width="150vh" height="150vh">
+            </div>
           </div>
-          <div class="item border item3">
-            <h4>Traducciones de carácter privado</h4>
-            <ul>
-              <li>Boleto de Compraventa</li>
-              <li>Certificaciones</li>
-              <li>Contratos (Comerciales, de Compraventa y Locación, etc.)</li>
-              <li>Demandas</li>
-              <li>Derecho Comercial</li>
-              <li>Derecho de familia y de las personas</li>
-              <li>Escrituras</li>
-              <li>Partidas de Nacimiento</li>
-              <li>Poderes</li>
-              <li>Sentencias de Adopción</li>
-              <li>Sentencias de Divorcio</li>
-              <li>Sociedades</li>
-              <li>Sucesiones</li>
-            </ul>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-6 col-xs-2">
+            <h4>Subtitulados</h4>  
+            <img src="./img/iconosubtitulo.png" class="img-fluid" alt="subtitulados" width="150vh" height="150vh">
           </div>
-          <div class="item border item4">
-            <h4>Otros</h4>
-            <ul>
-              <li>Corrección y revisión de documentos</li>
-              <li>Subtitulados</li>
-              <li>Traducción de audio</li>
-              <li>Transcripción de audio</li>
-            </ul>
+          <div class="col-md-6 col-xs-2">
+            <h4>Transcripción y Traducción de Audio</h4>
+            <img src="./img/iconoaudio.png" class="img-fluid" alt="audio" width="150vh" height="150vh">
           </div>
-          <div class="item border item5">
-            <h4>Áreas de nuestra especialidad</h4>
-              <ul>
-                <li>Economía y Finanzas</li>
-                <li>Hotelería y Turismo</li>
-                <li>Impuestos</li>
-                <li>Informática</li>
-                <li>Marketing</li>
-                <li>Publicidad</li>
-                <li>Telecomunicaciones</li>
-                <li>Arquitectura</li>
-            </ul>
-          </div>
+        </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <p class="footer__p"> LB Traducciones. Teléfono: 4173-1344 | info@lbtraducciones.com. Creado por GPWEB
+      </p>
+    </footer>
   </body>
 </html>
