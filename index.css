@@ -20,6 +20,7 @@ html {
   color:rgba(0, 0, 0, 0.733);
   margin: 0 10px 0 10px;
   font-family: 'Roboto', sans-serif;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -27,6 +28,7 @@ nav ul {
   flex-direction: row;
   gap: 10px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 
@@ -37,6 +39,18 @@ nav ul {
 
 li a:hover {
   color: rgb(69, 184, 226);
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.line {
+  width: 100%;
+  height: 20%;
+  background-color: lightseagreen;
 }
 
 .seccion1 {
@@ -87,30 +101,48 @@ main h4 {
 
 h2 {
   background-color:lightseagreen;
-  height: 100px;
-  padding: 40px;
+  width: auto;
+  padding: 35px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
+  color:rgba(0, 0, 0, 0.733);
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .contenedor__secundario {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  margin: 50px
-}
-
-
-.contenedorHijo {
-  margin: 10px 10px;
+  margin: 10vh;
   text-align: center;
+  grid-template-areas:
+  'item1 item2 item3 item4';
+  grid-column-gap: 5vh;
 }
 
-.contenedorHijo p {
-  text-align: center;
+.item1 {
+  grid-area: item1;
+  justify-items: stretch;
 }
 
-.contenedorHijo img {
+.item2 {
+  grid-area: item2;
+  justify-items: stretch;
+}
+
+.item3 {
+  grid-area: item3;
+  justify-items: stretch;
+}
+
+.item4 {
+  grid-area: item4;
+  justify-items: stretch;
+}
+
+.contenedor__secundario img {
   border-radius: 10%;
 }
 
@@ -160,14 +192,6 @@ h2 {
 
 /* CLIENTES */
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  color:rgba(0, 0, 0, 0.733);
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-}
-
 .contenedorArriba {
   display: flex;
   flex-direction: row;
@@ -197,7 +221,7 @@ h2 {
 /* SERVICIOS */
 * {
   font-family: 'Roboto', sans-serif;
-  }
+}
 
 .main__servicios h4 {
   font-style: normal;
@@ -208,47 +232,6 @@ h2 {
 }
 
 
-/* #grid {
-  display: grid;
-  grid-template-rows:repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-  'item1 item1'
-  'item2 item3'
-  'item4 item5';
-  height: 100vh;
-  justify-content: space-evenly;
-}
-
-.item1 {
-  grid-area: item1;
-  background-image: url(../img/books.jpg);
-  height: 200px;
-  background-size:cover;
-  justify-items:stretch;
-}
-
-.item2 {
-  grid-area: item2;
-  align-self: stretch;
-}
-
-.item3 {
-  grid-area: item3;
-  align-self: stretch;
-}
-
-.item4 {
- grid-area: item4;
- align-self: stretch;
- height: 50vh;
-}
-
-.item5 {
-  grid-area: item5;
-  align-self: stretch;
-  } */
-
 /* CONTACTO */
 
   .seccion__secundaria {
@@ -256,6 +239,7 @@ h2 {
     text-shadow: black;
     height: 400px;
     height: 500px;
+    margin-bottom: 400px;
   }
 
   .mapa {
@@ -270,18 +254,70 @@ h2 {
     justify-content: space-around;
   }
 
+  
+  
+  
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .seccion1__hero {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: small;
+      padding: 2vh;
+      justify-content: center;
+    } 
+    
+    .contenedor__secundario {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+      'item1'
+      'item2'
+      'item3'
+      'item4';
+    }
+    
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 
+    .whatsapp {
+      display: none;
+    }
+    
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
+}
 
-/* MEDIA QUERIES */
-@media (min-width: 768px) {
-  /* .header {
-  display:flex
-  } */
-
-  .contenedor .contenedorIzquierda {
-    flex-wrap: wrap;
-    flex-direction: column;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contenedor__secundario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'item1 item2'
+    'item3 item4';
   }
 }
 
+@media (max-width: 1024px) {
+  .contenedorAbajo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .contenedorArriba {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .clientes img:hover {
+    transform: none;
+  }
+}
