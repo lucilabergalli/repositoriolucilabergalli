@@ -1,0 +1,17 @@
+$variable-1: 4px;
+$color: lightseagreen;
+$altura: 100px;
+
+.parrafo {
+  height: $altura;
+}
+
+.titulo {
+  font-size: $variable-1 * 6;
+  background-color: $color;
+}
+
+.titulo__parrafo {
+  font-size: $variable-1 * 4;
+  @extend .parrafo;
+}
