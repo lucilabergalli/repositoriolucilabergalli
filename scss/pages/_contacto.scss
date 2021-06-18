@@ -1,0 +1,39 @@
+.checkbtn {
+  font-size: 30px;
+  color: lightseagreen;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+#cm {
+ display: none;
+}
+
+.seccion__secundaria {
+  color: black;
+  text-shadow: black;
+  height: $variable-1 * 40;
+  height: $variable-1 * 50;
+  margin-bottom: $variable-1 * 40;
+}
+
+.mapa {
+  float: left;
+  margin-right: $variable-1 / 2;
+}
+
+.seccion__secundaria--lista {
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+  justify-content: space-around;
+  line-height: $variable-1 * 5;
+}
+
+.whatsapp {
+  list-style: none;
+}

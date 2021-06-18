@@ -1,0 +1,138 @@
+@media (max-width: 768px) {
+  .seccion1__hero {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    padding: 2vh;
+    justify-content: center;
+  }
+
+  .contenedor__secundario {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    'item1'
+    'item2'
+    'item3'
+    'item4';
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .whatsapp {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.contenedor__secundario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  'item1 item2'
+  'item3 item4';
+}
+}
+
+@media (max-width: 1024px) {
+.contenedorAbajo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contenedorArriba {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.clientes img:hover {
+  transform: none;
+}
+}
+
+@media (max-width: 952px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-left: 400px;
+    float: right;
+    margin-top: -40px;
+    overflow: visible;
+  }
+
+  nav {
+    position: fixed;
+    margin-top: 80px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: grey;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul {
+    display: block;
+    transition: all .5s;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  a:hover, a.active {
+    background: none;
+    color: white
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #checkbox:checked ~ ul {
+    left: 0;
+  }
+  
+  #cm:checked ~ ul {
+  left: 0;
+  }
+  
+  #chbox:checked ~ ul {
+  left: 0;
+  }
+}
+
+
+@media (min-width: 368px) and (max-width: 750) {
+  .checkbtn {
+    display: block;
+    float: right;
+    margin-top: -40px;
+    margin-left: 400vh;
+  }
+}

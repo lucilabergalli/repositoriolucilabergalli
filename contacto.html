@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LB Traducciones</title>
-    <link rel="stylesheet" href="scss/style.scss">
-    <link rel="stylesheet" href="scss/style.css">
+    <meta name="description" content="Servicios de traducción e interpetación">
+    <meta name="keywords"  content="traducción, Interpretación, subtitulados, audio, español, inglés">
+    <title>LB Traducciones - Contacto</title>
+    <link rel="stylesheet" href="scss/style.css">>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
   </head>
   <body>
     <header class="header">
@@ -20,21 +22,18 @@
         <img src="./img/LBTraducciones.png" alt="LogoLBTraducciones"> 
       </div>
       <nav>
+        <input type="checkbox" id="cm">
+        <label for="check" class="checkbtn">
+          <i class="gg-menu"></i>
+        </label>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="clientes.html">Clientes</a></li>
           <li><a href="cotizacion.html">Cotización</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-        <div class="whatsapp">
-        <ul>
-          <li> 
-            <a href="https://api.whatsapp.com/send?phone=+541153230726" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp" width="30px"></a>
-          </li>
-        </ul>
-      </div>
     </header>
     <main>
       <section class="seccion__secundaria">
@@ -52,17 +51,19 @@
             <li>
               Mail: info@lbtraducciones.com
             </li>
+            <div class="whatsapp">
+              <li> 
+                <a href="https://api.whatsapp.com/send?phone=+541153230726" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp" width="30px"></a>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
       </section>
-      <div class="parrafo">
-        <h5 class="titulo">Titulo</h5>
-        <p class="titulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus atque voluptatibus facere explicabo delectus minus dolores, quasi rerum possimus doloremque dicta animi consequatur ipsa ab nemo culpa, veniam iure impedit!</p>
-        <h5 class="titulo">Titulo2</h5>
-        <p class="titulo__parrafo">Lorem.</p>
-          <p class="titulo__parrafo">Lorem, ipsum.</p>
-      </div>
+      <footer class="footer">
+        <p class="footer__p"> LB Traducciones. Teléfono: 4173-1344 | info@lbtraducciones.com. Creado por GPWEB
+        </p>
+      </footer>
     </main>
   </body>
 </html>

@@ -1,17 +1,9 @@
-$variable-1: 4px;
-$color: lightseagreen;
-$altura: 100px;
-
-.parrafo {
-  height: $altura;
-}
-
-.titulo {
-  font-size: $variable-1 * 6;
-  background-color: $color;
-}
-
-.titulo__parrafo {
-  font-size: $variable-1 * 4;
-  @extend .parrafo;
-}
+@import "partials/variables";
+@import "partials/reset";
+@import "pages/_index.scss";
+@import "pages/index";
+@import "pages/clientes";
+@import "pages/contacto";
+@import "pages/cotizacion";
+@import "pages/servicios";
+@import "partials/queries";

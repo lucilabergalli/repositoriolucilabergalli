@@ -1,0 +1,44 @@
+.checkbtn {
+  font-size: 30px;
+  color: lightseagreen;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+#checkbox {
+ display: none;
+}
+
+a:visited a:link {
+  text-decoration:none;
+}
+
+.contenedorArriba {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contenedorAbajo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  gap: $variable-1 * 3;
+  margin-bottom: $variable-1 * 30;
+}
+
+.clientes img:hover {
+  transform: scale(2,2);
+}
