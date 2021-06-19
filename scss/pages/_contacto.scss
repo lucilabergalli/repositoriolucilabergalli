@@ -9,7 +9,7 @@
   display: none;
 }
 
-#cm {
+#checkboxcheck {
  display: none;
 }
 
@@ -26,10 +26,10 @@
   margin-right: $variable-1 / 2;
 }
 
-.seccion__secundaria--lista {
+.datosDeContacto {
   display: flex;
   flex-direction: column;
-  text-align:left;
+  text-align: left;
   justify-content: space-around;
   line-height: $variable-1 * 5;
 }

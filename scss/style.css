@@ -510,7 +510,7 @@ a:visited a:link {
   display: none;
 }
 
-#cm {
+#checkboxcheck {
   display: none;
 }
 
@@ -527,7 +527,7 @@ a:visited a:link {
   margin-right: 5px;
 }
 
-.seccion__secundaria--lista {
+.datosDeContacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,15 +593,27 @@ a:visited a:link {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .whatsapp {
-    display: none;
-  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .mapa {
+    display: none;
+  }
+  .datosDeContacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 10px;
   }
 }
 
@@ -693,10 +705,7 @@ a:visited a:link {
   #checkbox:checked ~ ul {
     left: 0;
   }
-  #cm:checked ~ ul {
-    left: 0;
-  }
-  #chbox:checked ~ ul {
+  #checkboxcheck:checked ~ ul {
     left: 0;
   }
 }
