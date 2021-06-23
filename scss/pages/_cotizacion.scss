@@ -1,9 +1,78 @@
-.formulario div {
-  height: $variable-1 * 7;
-  margin-bottom: $variable-1;
+.checkbutton {
+  font-size: 30px;
+  color: lightseagreen;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+
+#checkcheckbox {
+  display: none;
+}
+
+.main__presupuesto {
+  width: 100%;
 }
 
 .main__presupuesto h2 {
   margin-bottom: 0;
 }
 
+.formulario {
+  color: rgb(77, 74, 74);
+  line-height: 40px;
+  margin-bottom: 100px;
+  border:none;
+}
+
+legend {
+  display: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.field {
+  padding: 5px;
+}
+
+.field:focus {
+  border-color: $color;
+}
+
+.radio {
+  margin-bottom: 50px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+#submit {
+  color:rgb(77, 74, 74);
+  padding: 5px;
+  font-size: medium;
+  background-color: rgb(173, 230, 228);
+  border-radius: 5px;
+}
+
+#reset {
+  color:rgb(77, 74, 74);
+  padding: 5px;
+  font-size: medium;
+  background-color: rgb(173, 230, 228);
+  border-radius: 5px;
+}
+
+.footer {
+  color: rgb(77, 74, 74);
+}

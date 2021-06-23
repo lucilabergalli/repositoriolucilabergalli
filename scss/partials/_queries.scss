@@ -2,9 +2,9 @@
   .seccion1__hero {
     display: flex;
     flex-wrap: wrap;
-    font-size: small;
-    padding: 2vh;
+    font-size: x-small;
     justify-content: center;
+    padding-bottom: 300px;
   }
 
   .contenedor__secundario {
@@ -37,6 +37,16 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    'servicio1'
+    'servicio2'
+    'servicio3'
+    'servicio4';
   }
 }
 
@@ -79,10 +89,23 @@
   .checkbtn {
     display: block;
     position: relative;
-    margin-left: 400px;
-    float: right;
     margin-top: -40px;
     overflow: visible;
+  }
+
+  .checkbtn {
+    margin-left: 750px;
+  }
+
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+
+   .checkbutton {
+    margin-left: 750px;
   }
 
   nav {
@@ -123,18 +146,148 @@
   #checkbox:checked ~ ul {
     left: 0;
   }
-  
+
   #checkboxcheck:checked ~ ul {
   left: 0;
+  }
+
+  #checkcheckbox:checked ~ ul {
+    left: 0;
+    }
+}
+
+
+@media (max-width: 770px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 700px;
+  }
+
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+
+  .checkbutton {
+    margin-left: 700px;
+  }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .seccion1__hero {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: 20rem;
+    line-height: $variable-1 * 6;
+    overflow:hidden;
+    padding: 3rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 437px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 290px;
+  }
+
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+
+  .checkbutton {
+    margin-left: 290px;
   }
 }
 
 
-@media (min-width: 368px) and (max-width: 750) {
+@media (min-width: 628px) and (max-width: 720px) {
   .checkbtn {
     display: block;
-    float: right;
+    position: relative;
     margin-top: -40px;
-    margin-left: 400vh;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 600px;
+  }
+
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 600px;
+  }
+}
+
+@media (min-width: 523px) and (max-width: 627px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 500px;
+  }
+
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 500px;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 522px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 400px;
+  }
+
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 400px;
+  }
+}
+
+@media (max-width: 916px) {
+  .texto {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -2,6 +2,49 @@
   font-style: normal;
 }
 
-.row {
+h2 {
+  background-color:$color;
+  width: auto;
+  padding: 35px;
+  font-weight: bold;
+  color: $titulo;
   text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.imagen {
+  margin-top: -3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  margin: 10vh;
+  text-align: center;
+  grid-template-areas:
+  'servicio1 servicio2' 
+  'servicio3 servicio4';
+}
+
+.servicio1 {
+  grid-area: servicio1;
+  justify-items: stretch;
+}
+
+.servicio2 {
+  grid-area: servicio2;
+  justify-items: stretch;
+}
+
+.servicio3 {
+  grid-area: servicio3;
+  justify-items: stretch;
+}
+
+.servicio4 {
+  grid-area: servicio4;
+  justify-items: stretch;
 }

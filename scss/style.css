@@ -91,8 +91,8 @@ li a:hover {
 }
 
 h1 {
-  font-family: 'Antonio', sans-serif;
   font-size: 300%;
+  font-family: 'Antonio', sans-serif;
   text-align: center;
   height: auto;
   width: auto;
@@ -301,8 +301,8 @@ li a:hover {
 }
 
 h1 {
-  font-family: 'Antonio', sans-serif;
   font-size: 300%;
+  font-family: 'Antonio', sans-serif;
   text-align: center;
   height: auto;
   width: auto;
@@ -519,7 +519,6 @@ a:visited a:link {
   text-shadow: black;
   height: 400px;
   height: 500px;
-  margin-bottom: 400px;
 }
 
 .mapa {
@@ -545,21 +544,143 @@ a:visited a:link {
   list-style: none;
 }
 
-.formulario div {
-  height: 70px;
-  margin-bottom: 10px;
+.checkbutton {
+  font-size: 30px;
+  color: lightseagreen;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+#checkcheckbox {
+  display: none;
+}
+
+.main__presupuesto {
+  width: 100%;
 }
 
 .main__presupuesto h2 {
   margin-bottom: 0;
 }
 
+.formulario {
+  color: #4d4a4a;
+  line-height: 40px;
+  margin-bottom: 100px;
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.field {
+  padding: 5px;
+}
+
+.field:focus {
+  border-color: lightseagreen;
+}
+
+.radio {
+  margin-bottom: 50px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+#submit {
+  color: #4d4a4a;
+  padding: 5px;
+  font-size: medium;
+  background-color: #ade6e4;
+  border-radius: 5px;
+}
+
+#reset {
+  color: #4d4a4a;
+  padding: 5px;
+  font-size: medium;
+  background-color: #ade6e4;
+  border-radius: 5px;
+}
+
+.footer {
+  color: #4d4a4a;
+}
+
 .main__servicios h4 {
   font-style: normal;
 }
 
-.row {
+h2 {
+  background-color: lightseagreen;
+  width: auto;
+  padding: 35px;
+  font-weight: bold;
+  color: white;
   text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.imagen {
+  margin-top: -3rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin: 10vh;
+  text-align: center;
+      grid-template-areas: 'servicio1 servicio2'  'servicio3 servicio4';
+}
+
+.servicio1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: servicio1;
+  justify-items: stretch;
+}
+
+.servicio2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: servicio2;
+  justify-items: stretch;
+}
+
+.servicio3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: servicio3;
+  justify-items: stretch;
+}
+
+.servicio4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: servicio4;
+  justify-items: stretch;
 }
 
 @media (max-width: 768px) {
@@ -569,11 +690,11 @@ a:visited a:link {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: small;
-    padding: 2vh;
+    font-size: x-small;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 300px;
   }
   .contenedor__secundario {
     display: -ms-grid;
@@ -614,6 +735,13 @@ a:visited a:link {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: 10px;
+  }
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'servicio1' 'servicio2' 'servicio3' 'servicio4';
   }
 }
 
@@ -666,10 +794,20 @@ a:visited a:link {
   .checkbtn {
     display: block;
     position: relative;
-    margin-left: 400px;
-    float: right;
     margin-top: -40px;
     overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 750px;
+  }
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 750px;
   }
   nav {
     position: fixed;
@@ -708,13 +846,139 @@ a:visited a:link {
   #checkboxcheck:checked ~ ul {
     left: 0;
   }
+  #checkcheckbox:checked ~ ul {
+    left: 0;
+  }
 }
 
-@media (min-width: 368px) and (max-width: 750) {
+@media (max-width: 770px) {
   .checkbtn {
     display: block;
-    float: right;
+    position: relative;
     margin-top: -40px;
-    margin-left: 400vh;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 700px;
+  }
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 700px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .seccion1__hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: 20rem;
+    line-height: 60px;
+    overflow: hidden;
+    padding: 3rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 437px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 290px;
+  }
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 290px;
+  }
+}
+
+@media (min-width: 628px) and (max-width: 720px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 600px;
+  }
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 600px;
+  }
+}
+
+@media (min-width: 523px) and (max-width: 627px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 500px;
+  }
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 500px;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 522px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    overflow: visible;
+  }
+  .checkbtn {
+    margin-left: 400px;
+  }
+  .checkbutton {
+    display: block;
+    position: relative;
+    margin-top: -460px;
+    overflow: visible;
+  }
+  .checkbutton {
+    margin-left: 400px;
+  }
+}
+
+@media (max-width: 916px) {
+  .texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
